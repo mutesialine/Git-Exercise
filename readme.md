@@ -5,17 +5,22 @@
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise
 $ git init
 Initialized empty Git repository in C:/Users/TheGym/Git-Exercise/.git/
+
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (Main)
 $ git branch -M main
+
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git add readme.md
+
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git commit -m "init project"
 On branch main
 nothing to commit, working tree clean
+
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git remote add origin https://github.com/mutesialine/Git-Exercise.git
 error: remote origin already exists.
+
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git push -u origin main
 Enumerating objects: 3, done.
@@ -338,3 +343,41 @@ TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git reset --hard
 HEAD is now at c27c092 setup home and about page
 ...
+
+## Bundle-2
+
+### exercise1
+
+...bash
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/bundle-2)
+$ git add service.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/bundle-2)
+$ git commit -m"create service page"
+[ft/bundle-2 1035c2b] create service page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 service.html
+
+ TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/bundle-2)
+$ git push origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 136.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/mutesialine/Git-Exercise/pull/new/ft/bundle-2
+remote:
+To https://github.com/mutesialine/Git-Exercise.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+
+ ...
+
+

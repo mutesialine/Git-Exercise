@@ -823,6 +823,51 @@ To https://github.com/mutesialine/Git-Exercise.git
 
 
  ```
+ ## Bundle-4
+ ### Exercise-1
+
+ ```bash
+ TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git remote add git-copy https://github.com/mutesialine/Git-exercise-clone.git
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git remote
+git-copy
+origin  
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git add home.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git commit -m "add the list on home page"
+[main f2dc46f] add the list on home page       
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 360 bytes | 360.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mutesialine/Git-Exercise.git
+   afb43b2..f2dc46f  main -> main
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git push git-copy
+Enumerating objects: 40, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (40/40), 8.86 KiB | 1.48 MiB/s, done.
+Total 40 (delta 18), reused 20 (delta 8), pack-reused 0
+remote: Resolving deltas: 100% (18/18), done.
+To https://github.com/mutesialine/Git-exercise-clone.git
+ * [new branch]      main -> main
+
+```
 
 
 

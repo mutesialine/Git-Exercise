@@ -1,7 +1,7 @@
 # Git Exercise
 ## bundle1
 ### Exercise1
-...bash
+```bash
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise
 $ git init
 Initialized empty Git repository in C:/Users/TheGym/Git-Exercise/.git/
@@ -75,9 +75,10 @@ TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (dev)
 $ git push origin --delete test
 To https://github.com/mutesialine/Git-Exercise.git
  - [deleted]         test
- ...
+ ```
  ### exercise2
- ...bash
+
+ ```bash
  TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise
 $ git init
 Initialized empty Git repository in C:/Users/TheGym/Git-Exercise/.git/
@@ -342,14 +343,15 @@ Dropped stash@{0} (f14bc1afd7528daeeae3d0373a8ad3b0486f259e)
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git reset --hard
 HEAD is now at c27c092 setup home and about page
-...
+
+```
 
 
 ## Bundle-2
 
 ### Exercise-1
 
-...bash
+```bash
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
@@ -378,12 +380,13 @@ remote:      https://github.com/mutesialine/Git-Exercise/pull/new/ft/bundle-2
 remote:
 To https://github.com/mutesialine/Git-Exercise.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
-...
+
+```
  
  
   ### Exercise2
 
-...bash 
+```bash 
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git pull
 Already up to date.
@@ -470,13 +473,14 @@ Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/mutesialine/Git-Exercise.git
    8c7b62b..1e65f86  ft/service-redesign -> ft/service-redesign
-...
+
+```
 
 
 ## Bundle-3
 ### Exercise-1
 
-...bash
+```bash
 
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
 $ git checkout -b ft/team-page
@@ -484,12 +488,6 @@ Switched to a new branch 'ft/team-page'
 
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
 $ git add team.html
-
-TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
-$ git commit -m " new page of team'
-> 
-bash: unexpected EOF while looking for matching `"'
-bash: syntax error: unexpected end of file
 
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
 $ git commit -m "new page of team"
@@ -601,37 +599,6 @@ Date:   Mon Oct 24 10:02:25 2022 +0200
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
 $ git checkout ft/contact-page
 Switched to branch 'ft/contact-page'
-
-TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
-$ git cherry-pick
-usage: git cherry-pick [<options>] <commit-ish>...
-   or: git cherry-pick <subcommand>
-
-    --quit                end revert or cherry-pick sequence
-    --continue            resume revert or cherry-pick sequence
-    --abort               cancel revert or cherry-pick sequence
-    --skip                skip current commit and continue
-    --cleanup <mode>      how to strip spaces and #comments from message
-    -n, --no-commit       don't automatically commit
-    -e, --edit            edit the commit message
-    -s, --signoff         add a Signed-off-by trailer
-    -m, --mainline <parent-number>
-                          select mainline parent
-    --rerere-autoupdate   update the index with reused conflict resolution if possible
-    --strategy <strategy>
-                          merge strategy
-    -X, --strategy-option <option>
-                          option for merge strategy
-    -S, --gpg-sign[=<key-id>]
-                          GPG sign commit
-    -x                    append commit name
-    --ff                  allow fast-forward
-    --allow-empty         preserve initially empty commits
-    --allow-empty-message
-                          allow commits with empty messages
-    --keep-redundant-commits
-                          keep redundant, empty commits
-
 
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
 $ git cherry-pick 5f3b57df27212cb663072c61c9490bf8118838d4
@@ -779,7 +746,83 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/mutesialine/Git-Exercise.git
    f3253d9..60accee  ft/faq-page -> ft/faq-page
 
-...
+```
+
+
+### Exercise-2
+
+```bash
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git add .
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git commit -m "add home page content"
+[main d92c824] add home page content
+ 1 file changed, 1 insertion(+)
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 68.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mutesialine/Git-Exercise.git
+   8820f44..d92c824  main -> main
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/home-page-redesign)
+$ git add home.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/home-page-redesign)
+$ git commit -m "add content2 on home page"
+[ft/home-page-redesign a0a4df0] add content2 on home page
+ 1 file changed, 1 insertion(+)
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+fatal: unable to access 'https://github.com/mutesialine/Git-Exercise.git/': Could not resolve host: github.com
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 1.59 KiB | 815.00 KiB/s, done.
+Total 14 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/mutesialine/Git-Exercise/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/mutesialine/Git-Exercise.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+
+ ```
 
 
 

@@ -345,9 +345,9 @@ HEAD is now at c27c092 setup home and about page
 ...
 
 
-## bundle2
+## Bundle-2
 
-### exercise1
+### Exercise-1
 
 ...bash
 TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
@@ -471,6 +471,316 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/mutesialine/Git-Exercise.git
    8c7b62b..1e65f86  ft/service-redesign -> ft/service-redesign
 ...
+
+
+## Bundle-3
+### Exercise-1
+
+...bash
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
+$ git add team.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
+$ git commit -m " new page of team'
+> 
+bash: unexpected EOF while looking for matching `"'
+bash: syntax error: unexpected end of file
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
+$ git commit -m "new page of team"
+[ft/team-page 5f3b57d] new page of team
+ 1 file changed, 13 insertions(+)
+ create mode 100644 team.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 469 bytes | 117.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/mutesialine/Git-Exercise/pull/new/ft/team-page
+remote:
+To https://github.com/mutesialine/Git-Exercise.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
+$ git log
+commit 5f3b57df27212cb663072c61c9490bf8118838d4 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:06:17 2022 +0200
+
+    new page of team
+
+commit 4c002ce631886abe665c75571ff5378de2e38f87 (origin/main, origin/HEAD, main, ft/contact-page)
+Author: Mutesi <ktesialine@gmail.com>
+:...skipping...
+commit 5f3b57df27212cb663072c61c9490bf8118838d4 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:06:17 2022 +0200
+
+    new page of team
+
+commit 4c002ce631886abe665c75571ff5378de2e38f87 (origin/main, origin/HEAD, main, ft/contact-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 11:33:08 2022 +0200
+
+    bundele2 exercise2
+
+commit 1de24d6684a35ff5b22ef6c9ab4079518ab2fa8f
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 10:14:02 2022 +0200
+:...skipping...
+commit 5f3b57df27212cb663072c61c9490bf8118838d4 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:06:17 2022 +0200
+
+    new page of team
+
+commit 4c002ce631886abe665c75571ff5378de2e38f87 (origin/main, origin/HEAD, main, ft/contact-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 11:33:08 2022 +0200
+
+    bundele2 exercise2
+
+commit 1de24d6684a35ff5b22ef6c9ab4079518ab2fa8f
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 10:14:02 2022 +0200
+
+    new list of service
+
+commit 35e6279386acca5457bc9abe4404650d6378aeac
+Merge: 7f9190e 1035c2b
+Author: Chrissie <chrissiemhrk@gmail.com>
+Date:   Tue Oct 25 12:00:28 2022 +0200
+
+    Merge pull request #1 from mutesialine/ft/bundle-2
+
+    create service page
+
+commit 7f9190ef918b2d9e21a74ad51295e5b493bd4af7
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Tue Oct 25 08:54:37 2022 +0200
+
+    bundle2 exercise1
+
+commit 1035c2baff197e05ad800e154bf6b9a0931d3f78 (origin/ft/bundle-2)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Tue Oct 25 08:40:14 2022 +0200
+
+    create service page
+
+commit f93a1993e3913cfdd85d9366dd3d03d641b71b74
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Mon Oct 24 10:02:25 2022 +0200
+
+    Bundle1 exercise 2
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
+$ git cherry-pick
+usage: git cherry-pick [<options>] <commit-ish>...
+   or: git cherry-pick <subcommand>
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+    -x                    append commit name
+    --ff                  allow fast-forward
+    --allow-empty         preserve initially empty commits
+    --allow-empty-message
+                          allow commits with empty messages
+    --keep-redundant-commits
+                          keep redundant, empty commits
+
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
+$ git cherry-pick 5f3b57df27212cb663072c61c9490bf8118838d4
+[ft/contact-page 5b197e9] new page of team
+ Date: Thu Oct 27 14:06:17 2022 +0200
+ 1 file changed, 13 insertions(+)
+ create mode 100644 team.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
+$ git add .
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
+$ git commit -m "contact pages"
+[ft/contact-page f664ec8] contact pages
+ 1 file changed, 12 insertions(+)
+ create mode 100644 contact.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
+$ git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 738 bytes | 369.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/mutesialine/Git-Exercise/pull/new/ft/contact-page
+remote:
+To https://github.com/mutesialine/Git-Exercise.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git add faq.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git commit -m "faq page with some new content"
+[ft/faq-page f3253d9] faq page with some new content
+ 1 file changed, 12 insertions(+)
+ create mode 100644 faq.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 464 bytes | 154.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/mutesialine/Git-Exercise/pull/new/ft/faq-page
+remote:
+To https://github.com/mutesialine/Git-Exercise.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git log
+commit f3253d9d469c85e1590dca79a0113d2889d12f38 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:48:19 2022 +0200
+
+    faq page with some new content
+
+:...skipping...
+commit f3253d9d469c85e1590dca79a0113d2889d12f38 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:48:19 2022 +0200
+
+    faq page with some new content
+
+commit f664ec82c7d40c4ef138a8d21bee4dee6cfc0635 (origin/ft/contact-page, ft/contact-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:42:03 2022 +0200
+
+    contact pages
+
+commit 5b197e9f27b1214f5a97f22b15b995938fe5c702
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:06:17 2022 +0200
+:...skipping...
+commit f3253d9d469c85e1590dca79a0113d2889d12f38 (HEAD -> ft/faq-page, origin/ft/faq-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:48:19 2022 +0200
+Revert "new page of team"
+
+    faq page with some new content
+
+commit f664ec82c7d40c4ef138a8d21bee4dee6cfc0635 (origin/ft/contact-page, ft/contact-page)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:42:03 2022 +0200
+
+    contact pages
+
+commit 5b197e9f27b1214f5a97f22b15b995938fe5c702
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 14:06:17 2022 +0200
+
+    new page of team
+
+commit 4c002ce631886abe665c75571ff5378de2e38f87 (origin/main, origin/HEAD, main)
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 11:33:08 2022 +0200
+
+    bundele2 exercise2
+
+commit 1de24d6684a35ff5b22ef6c9ab4079518ab2fa8f
+Author: Mutesi <ktesialine@gmail.com>
+Date:   Thu Oct 27 10:14:02 2022 +0200
+
+    new list of service
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git revert 5b197e9f27b1214f5a97f22b15b995938fe5c702
+[ft/faq-page 60accee] Revert "new page of team"
+ 1 file changed, 13 deletions(-)
+ delete mode 100644 team.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (ft/faq-page)
+$ git push origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 273 bytes | 273.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mutesialine/Git-Exercise.git
+   f3253d9..60accee  ft/faq-page -> ft/faq-page
+
+...
+
 
 
 

@@ -962,6 +962,107 @@ To https://github.com/mutesialine/Git-Exercise.git
  * [new branch]      ft/squashing -> ft/squashing
 
  ```
+ ## Bundle-5
+
+ ### Exercise-1
+ 
+```bash
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git pull
+Already up to date.
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git add index.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    home.html
+
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git add home.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git commit -m "rename home to index"
+[main dcff6fd] rename home to index
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename home.html => index.html (100%)
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 234 bytes | 234.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mutesialine/Git-Exercise.git
+   53fe32c..dcff6fd  main -> main
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/Git-Exercise (main)
+$ git push git-copy
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.46 KiB | 746.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+To https://github.com/mutesialine/Git-exercise-clone.git
+   f2dc46f..dcff6fd  main -> main
+
+   ```
+   ### Exercise-2
+
+   ```bash
+C:\Users\TheGym>git clone https://github.com/mutesialine/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (107/107), done.
+remote: Compressing objects: 100% (101/101), done.
+remote: Total 107 (delta 5), reused 104 (delta 4), pack-reused 0Receiving objects:  96% (103/107), 1.95 MiB | 6.00 KiB/s
+Receiving objects: 100% (107/107), 1.95 MiB | 10.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+
+C:\Users\TheGym>cd git-cafe-exercise
+C:\Users\TheGym\git-cafe-exercise>code .
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/git-cafe-exercise (main)
+$ git add index.html
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/git-cafe-exercise (main)
+$ git commit -m "Rename the main title"
+[main eaf0f92] Rename the main title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TheGym@DESKTOP-N5AF3JE MINGW64 ~/git-cafe-exercise (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mutesialine/git-cafe-exercise.git
+   d1d3f9c..eaf0f92  main -> main
+
+   ```
+
+
 
 
 
